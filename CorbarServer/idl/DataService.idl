@@ -1,0 +1,10 @@
+typedef sequence<string> TableList;
+interface SysProp
+{ 
+   boolean connDataBase(in string usr, in string pwd, in string dbn);
+   boolean createTable(in string tn);
+   long queryGrade(in string Itable, in string Iid);
+   boolean addGrade(in string Itable, in string Iid, in string Iname, in long Igrade);
+   TableList showTables();
+   void free();
+}; 

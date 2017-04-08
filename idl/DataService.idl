@@ -1,5 +1,5 @@
 typedef sequence<string> TableList;
-interface SysProp
+interface GradeManager
 { 
    boolean connDataBase(in string usr, in string pwd, in string dbn);
    boolean createTable(in string tn);

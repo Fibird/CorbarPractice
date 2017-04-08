@@ -5,6 +5,7 @@ import org.omg.CosNaming.*;
 import cc.chaoyangliu.corbar.client.DataService;
 import cc.chaoyangliu.corbar.client.DataServiceHelper;
 import cc.chaoyangliu.corbar.util.Config;
+import cc.chaoyangliu.corbar.util.Student;
 
 import java.util.ArrayList;
 import org.omg.CORBA.*;
@@ -77,7 +78,8 @@ public class DataServiceClientTest {
 			System.out.println(i + " " + a[i]);
 		}
 		System.out.println("Showing Tables Success!\n");
+		System.out.println("Disconnecting...");
+		dsRef.free();	
 		System.out.println("Nice! Everything is well!");
-		dsRef.free();
 	}
 }

@@ -54,7 +54,7 @@ public class Client {
 		if (value.btnValue) {
 			GradeManager frame = new GradeManager();
 			frame.setVisible(true);					
-			frame.setDs(value.usr, value.pwd, dbn);
+			frame.setDs(value.usr, value.pwd, dbn, args);
 		}
 	}
 

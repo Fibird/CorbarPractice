@@ -17,7 +17,8 @@ public class DBmanagerTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String usr = "root", pwd = "root", dbn = "rmijdbc";
-		DBManager dbm = new DBManager(usr, pwd, dbn); 
+		//DBManager dbm = new DBManager(usr, pwd, dbn);
+		DBManager dbm = new DBManager();
 		String [] tbs = {"t1", "t2", "t3"};
 		String tbn = "grade";
 		if (dbm.connDataBase(usr, pwd, dbn)) {

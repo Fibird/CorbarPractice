@@ -35,17 +35,16 @@ public class DBManager {
 		url = new String();	
 		tableName = new String();
 		stCreateTable = null;
-		System.out.println("constructor!");
 	}
 	
-//	public DBManager(String usr, String pwd, String dbn) {
-//		driver = "com.mysql.jdbc.Driver";
-//		user = usr;
-//		password = pwd;
-//		url = "jdbc:mysql://localhost:3306/" + dbn;
-//		tableName = null;
-//		stCreateTable = null;
-//	}
+	public DBManager(String usr, String pwd, String dbn) {
+		driver = "com.mysql.jdbc.Driver";
+		user = usr;
+		password = pwd;
+		url = "jdbc:mysql://localhost:3306/" + dbn;
+		tableName = null;
+		stCreateTable = null;
+	}
 	
 	/*
 	 * 连接数据库

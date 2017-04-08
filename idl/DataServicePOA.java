@@ -1,13 +1,13 @@
-package cc.chaoyangliu.corbar.client;
+
 /**
-* SysPropPOA.java .
+* DataServicePOA.java .
 * 由IDL-to-Java 编译器 (可移植), 版本 "3.2"生成
 * 从DataService.idl
-* 2017年4月7日 星期五 下午04时52分01秒 CST
+* 2017年4月8日 星期六 下午02时46分34秒 CST
 */
 
-public abstract class SysPropPOA extends org.omg.PortableServer.Servant
- implements SysPropOperations, org.omg.CORBA.portable.InvokeHandler
+public abstract class DataServicePOA extends org.omg.PortableServer.Servant
+ implements DataServiceOperations, org.omg.CORBA.portable.InvokeHandler
 {
 
   // Constructors
@@ -34,7 +34,7 @@ public abstract class SysPropPOA extends org.omg.PortableServer.Servant
 
     switch (__method.intValue ())
     {
-       case 0:  // SysProp/connDataBase
+       case 0:  // DataService/connDataBase
        {
          String usr = in.read_string ();
          String pwd = in.read_string ();
@@ -46,7 +46,7 @@ public abstract class SysPropPOA extends org.omg.PortableServer.Servant
          break;
        }
 
-       case 1:  // SysProp/createTable
+       case 1:  // DataService/createTable
        {
          String tn = in.read_string ();
          boolean $result = false;
@@ -56,7 +56,7 @@ public abstract class SysPropPOA extends org.omg.PortableServer.Servant
          break;
        }
 
-       case 2:  // SysProp/queryGrade
+       case 2:  // DataService/queryGrade
        {
          String Itable = in.read_string ();
          String Iid = in.read_string ();
@@ -67,7 +67,7 @@ public abstract class SysPropPOA extends org.omg.PortableServer.Servant
          break;
        }
 
-       case 3:  // SysProp/addGrade
+       case 3:  // DataService/addGrade
        {
          String Itable = in.read_string ();
          String Iid = in.read_string ();
@@ -80,7 +80,7 @@ public abstract class SysPropPOA extends org.omg.PortableServer.Servant
          break;
        }
 
-       case 4:  // SysProp/showTables
+       case 4:  // DataService/showTables
        {
          String $result[] = null;
          $result = this.showTables ();
@@ -89,7 +89,7 @@ public abstract class SysPropPOA extends org.omg.PortableServer.Servant
          break;
        }
 
-       case 5:  // SysProp/free
+       case 5:  // DataService/free
        {
          this.free ();
          out = $rh.createReply();
@@ -105,24 +105,24 @@ public abstract class SysPropPOA extends org.omg.PortableServer.Servant
 
   // Type-specific CORBA::Object operations
   private static String[] __ids = {
-    "IDL:SysProp:1.0"};
+    "IDL:DataService:1.0"};
 
   public String[] _all_interfaces (org.omg.PortableServer.POA poa, byte[] objectId)
   {
     return (String[])__ids.clone ();
   }
 
-  public SysProp _this() 
+  public DataService _this() 
   {
-    return SysPropHelper.narrow(
+    return DataServiceHelper.narrow(
     super._this_object());
   }
 
-  public SysProp _this(org.omg.CORBA.ORB orb) 
+  public DataService _this(org.omg.CORBA.ORB orb) 
   {
-    return SysPropHelper.narrow(
+    return DataServiceHelper.narrow(
     super._this_object(orb));
   }
 
 
-} // class SysPropPOA
+} // class DataServicePOA

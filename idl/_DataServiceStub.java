@@ -1,12 +1,12 @@
 
 /**
-* _GradeManagerStub.java .
+* _DataServiceStub.java .
 * 由IDL-to-Java 编译器 (可移植), 版本 "3.2"生成
 * 从DataService.idl
-* 2017年4月8日 星期六 下午02时37分22秒 CST
+* 2017年4月8日 星期六 下午02时46分34秒 CST
 */
 
-public class _GradeManagerStub extends org.omg.CORBA.portable.ObjectImpl implements GradeManager
+public class _DataServiceStub extends org.omg.CORBA.portable.ObjectImpl implements DataService
 {
 
   public boolean connDataBase (String usr, String pwd, String dbn)
@@ -134,7 +134,7 @@ public class _GradeManagerStub extends org.omg.CORBA.portable.ObjectImpl impleme
 
   // Type-specific CORBA::Object operations
   private static String[] __ids = {
-    "IDL:GradeManager:1.0"};
+    "IDL:DataService:1.0"};
 
   public String[] _ids ()
   {
@@ -168,4 +168,4 @@ public class _GradeManagerStub extends org.omg.CORBA.portable.ObjectImpl impleme
      orb.destroy() ;
    }
   }
-} // class _GradeManagerStub
+} // class _DataServiceStub

@@ -53,7 +53,7 @@ public class DataServiceClientTest {
 		System.out.println("Inserting...");
 		for (Student s : ss)
 		{
-			dsRef.addGrade("grade", s.getName(), s.getId(), s.getGrade());
+			dsRef.addGrade("grade", s.getId(), s.getName(), s.getGrade());
 		}	
 		System.out.println("Insert these data:");
 		for (Student s : ss)

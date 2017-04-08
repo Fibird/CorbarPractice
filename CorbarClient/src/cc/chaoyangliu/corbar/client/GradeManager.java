@@ -179,8 +179,8 @@ public class GradeManager extends JFrame {
 				} else {
 					int g = Integer.parseInt(tg);
 					
-				if(ds.addGrade(tn, sn, sid, g)) {
-					JOptionPane.showMessageDialog(null, "Grade Add Success");
+				if(ds.addGrade(tn, sid, sn, g)) {
+					JOptionPane.showMessageDialog(null, "Grade Add Success!");
 				}
 					
 				}	

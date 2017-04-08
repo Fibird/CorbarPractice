@@ -1,4 +1,4 @@
-package cc.chaoyangliu.corbar.server;
+package cc.chaoyangliu.corbar.client;
 
 
 /**

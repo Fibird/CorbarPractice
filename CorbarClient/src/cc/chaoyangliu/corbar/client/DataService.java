@@ -1,4 +1,6 @@
-package cc.chaoyangliu.corbar.server;
+package cc.chaoyangliu.corbar.client;
+
+
 /**
 * DataService.java .
 * 由IDL-to-Java 编译器 (可移植), 版本 "3.2"生成

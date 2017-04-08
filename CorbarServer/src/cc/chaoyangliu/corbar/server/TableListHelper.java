@@ -1,11 +1,9 @@
 package cc.chaoyangliu.corbar.server;
-
-
 /**
 * TableListHelper.java .
 * 由IDL-to-Java 编译器 (可移植), 版本 "3.2"生成
 * 从DataService.idl
-* 2017年4月7日 星期五 下午04时52分01秒 CST
+* 2017年4月8日 星期六 下午02时46分34秒 CST
 */
 
 abstract public class TableListHelper

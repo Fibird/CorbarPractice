@@ -2,13 +2,13 @@ package cc.chaoyangliu.corbar.server;
 
 
 /**
-* _SysPropStub.java .
+* _DataServiceStub.java .
 * 由IDL-to-Java 编译器 (可移植), 版本 "3.2"生成
 * 从DataService.idl
-* 2017年4月7日 星期五 下午04时52分01秒 CST
+* 2017年4月8日 星期六 下午02时46分34秒 CST
 */
 
-public class _SysPropStub extends org.omg.CORBA.portable.ObjectImpl implements SysProp
+public class _DataServiceStub extends org.omg.CORBA.portable.ObjectImpl implements DataService
 {
 
   public boolean connDataBase (String usr, String pwd, String dbn)
@@ -136,7 +136,7 @@ public class _SysPropStub extends org.omg.CORBA.portable.ObjectImpl implements S
 
   // Type-specific CORBA::Object operations
   private static String[] __ids = {
-    "IDL:SysProp:1.0"};
+    "IDL:DataService:1.0"};
 
   public String[] _ids ()
   {
@@ -170,4 +170,4 @@ public class _SysPropStub extends org.omg.CORBA.portable.ObjectImpl implements S
      orb.destroy() ;
    }
   }
-} // class _SysPropStub
+} // class _DataServiceStub

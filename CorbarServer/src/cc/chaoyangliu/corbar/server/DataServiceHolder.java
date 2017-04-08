@@ -1,37 +1,37 @@
 package cc.chaoyangliu.corbar.server;
 /**
-* TableListHolder.java .
+* DataServiceHolder.java .
 * 由IDL-to-Java 编译器 (可移植), 版本 "3.2"生成
 * 从DataService.idl
 * 2017年4月8日 星期六 下午02时46分34秒 CST
 */
 
-public final class TableListHolder implements org.omg.CORBA.portable.Streamable
+public final class DataServiceHolder implements org.omg.CORBA.portable.Streamable
 {
-  public String value[] = null;
+  public DataService value = null;
 
-  public TableListHolder ()
+  public DataServiceHolder ()
   {
   }
 
-  public TableListHolder (String[] initialValue)
+  public DataServiceHolder (DataService initialValue)
   {
     value = initialValue;
   }
 
   public void _read (org.omg.CORBA.portable.InputStream i)
   {
-    value = TableListHelper.read (i);
+    value = DataServiceHelper.read (i);
   }
 
   public void _write (org.omg.CORBA.portable.OutputStream o)
   {
-    TableListHelper.write (o, value);
+    DataServiceHelper.write (o, value);
   }
 
   public org.omg.CORBA.TypeCode _type ()
   {
-    return TableListHelper.type ();
+    return DataServiceHelper.type ();
   }
 
 }

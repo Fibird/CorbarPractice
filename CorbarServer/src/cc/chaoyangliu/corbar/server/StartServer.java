@@ -23,7 +23,7 @@ public class StartServer {
 			  
 			  org.omg.CORBA.Object objRef = orb.resolve_initial_references("NameService");
 			  NamingContextExt ncRef = NamingContextExtHelper.narrow(objRef);
-			  NameComponent[] path = {new NameComponent("SysProp", "")};
+			  NameComponent[] path = {new NameComponent("DataService", "")};
 			  
 			  // Servant to Reference
 			  org.omg.CORBA.Object ref = rootpoa.servant_to_reference(dsImpl);
@@ -35,7 +35,7 @@ public class StartServer {
 			  ncRef.rebind(path, href);
 			  
 			  System.out.println("DataServer ready and waiting ...");
-			  
+			  // Wait for requests
 			  orb.run();
 			  
 			} catch (Exception e) {

@@ -21,8 +21,6 @@ public class StartServer {
 			
 			  dsImpl.setOrb(orb);
 			  
-			  //System.out.println(orb.object_to_string(sysProImpl));
-			  
 			  org.omg.CORBA.Object objRef = orb.resolve_initial_references("NameService");
 			  NamingContextExt ncRef = NamingContextExtHelper.narrow(objRef);
 			  NameComponent[] path = {new NameComponent("SysProp", "")};
